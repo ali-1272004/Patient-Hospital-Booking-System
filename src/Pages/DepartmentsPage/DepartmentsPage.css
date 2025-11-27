@@ -1,0 +1,102 @@
+:root {
+  --primary-color: #2e5bff;
+  --secondary-color: #57a6ff;
+  --accent-color: #3fb2e5;
+  --background-color: #f1f4f8;
+  --text-color: #1c1c1c;
+}
+/* Section Title */
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: auto;
+    text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 6px rgba(87, 166, 255, 0.3);
+}
+/* Container */
+.departments-container {
+  padding: 3rem 2rem;
+  background: linear-gradient(
+    135deg,
+    rgba(241, 244, 248, 0.9),
+    rgba(241, 244, 248, 0.7)
+  );
+  border-radius: 16px;
+}
+.image-container {
+    overflow: hidden;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+  
+}
+.department-img {
+  height: 220px;
+  /* width: 100%; */
+  object-fit: cover;
+  
+  transition: transform 0.3s ease;
+}
+
+.department-card:hover .department-img {
+  transform: scale(1.05); /* subtle zoom on hover */
+}
+
+/* Department Card */
+.department-card {
+  background: linear-gradient(
+    145deg,
+    rgba(46, 91, 255, 0.08),
+    rgba(63, 178, 229, 0.08)
+  );
+  color: var(--text-color);
+  border-radius: 14px;
+  border: 1px solid rgba(46, 91, 255, 0.3);
+  backdrop-filter: blur(12px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* max-width: 400px;
+  margin: auto;
+  grid-column-gap: -20px !important;
+   */
+}
+
+.department-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(46, 91, 255, 0.25);
+  border-color: var(--accent-color);
+}
+
+/* Card Title */
+.department-card .card-title {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+/* CTA Button */
+.btn-department {
+  display: inline-block;
+  margin-top: 1rem;
+  background: linear-gradient(
+    90deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 0.5rem 1.2rem;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(63, 178, 229, 0.4);
+}
+
+.btn-department:hover {
+  background: linear-gradient(
+    90deg,
+    var(--secondary-color),
+    var(--accent-color)
+  );
+  transform: translateY(-2px);
+}
+/*-------------------------------------*/

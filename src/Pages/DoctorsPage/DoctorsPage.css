@@ -1,0 +1,93 @@
+.doctors-container {
+  padding: 3rem 2rem;
+  background: linear-gradient(
+    135deg,
+    rgba(241, 244, 248, 0.9),
+    rgba(241, 244, 248, 0.7)
+  );
+  border-radius: 16px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 6px rgba(87, 166, 255, 0.3);
+}
+
+.doctor-card {
+  background: linear-gradient(
+    145deg,
+    rgba(46, 91, 255, 0.08),
+    rgba(63, 178, 229, 0.08)
+  );
+  color: var(--text-color);
+  border-radius: 14px;
+  border: 1px solid rgba(46, 91, 255, 0.3);
+  backdrop-filter: blur(12px);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
+}
+
+.doctor-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 14px 28px rgba(46, 91, 255, 0.25);
+  border-color: var(--accent-color);
+}
+
+.doctor-img {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.5s ease;
+}
+
+.doctor-card:hover .doctor-img {
+  transform: scale(1.08);
+}
+
+.btn-book {
+  display: inline-block;
+  margin-top: 1rem;
+  background: linear-gradient(
+    90deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 0.5rem 1.2rem;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(63, 178, 229, 0.4);
+}
+
+.btn-book:hover {
+  background: linear-gradient(
+    90deg,
+    var(--secondary-color),
+    var(--accent-color)
+  );
+  transform: translateY(-2px);
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.doctor-card:nth-child(1) { animation-delay: 0.2s; }
+.doctor-card:nth-child(2) { animation-delay: 0.4s; }
+.doctor-card:nth-child(3) { animation-delay: 0.6s; }
+.doctor-card:nth-child(4) { animation-delay: 0.8s; }

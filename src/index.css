@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+  --primary-blue: #007bff;
+  --secondary-blue: #0056b3;
+  --background-light: #f4f7fc;
+  --text-dark: #333;
+  --text-light: #fff;
+  --form-bg: #fff;
+  --gradient-start: #3b82f6; 
+  --gradient-end: #1e3a8a; 
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background-light);
+  color: var(--text-dark);
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.page-layout {
+    display: flex;
+    max-width: 1200px;
+    width: 90%;
+    min-height: 80vh;
+    background-color: var(--form-bg);
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.design-section {
+    flex: 1; /* نسبة العمود الأيسر (التصميم) */
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    padding: 2rem;
+    color: var(--text-light);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.design-section .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    align-self: flex-start;
+    z-index: 10;
+}
+
+.design-section .doctor-image-container {
+    text-align: center;
+    position: relative;
+    background: rgba(255, 255, 255, 0.1); 
+    border-radius: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    min-height: 650px; 
+    padding: 0;
+}
+
+
+
+.doctor-photo {
+    width: 90%;
+    max-width: 323px;
+    height: 90%;
+    object-fit: cover;
+    display: block;
+    z-index: 0;
+    border-radius: 31px;
+}
+
+.design-section .stat {
+    position: absolute;
+    left: 10px;
+    top: 60%;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.design-section .stat-bottom {
+    position: absolute;
+    right: 10px;
+    bottom: 10%;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.form-section {
+    flex: 1.2; 
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.form-section h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: var(--text-dark);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+}
+
+input[type="text"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: var(--primary-blue);
+    outline: none;
+}
+
+.radio-group label {
+    font-weight: 400;
+    margin-right: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 0.5rem;
+    width: auto; 
+}
+
+.input-with-button {
+    display: flex;
+}
+
+.input-with-button input {
+    flex-grow: 1;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: none;
+}
+
+.verify-button {
+    background-color: var(--primary-blue);
+    color: var(--text-light);
+    border: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.verify-button:hover {
+    background-color: var(--secondary-blue);
+}
+
+.id-group {
+    display: flex;
+    gap: 1rem;
+}
+
+.id-group select, .id-group input {
+    flex: 1;
+}
+
+.submit-button {
+    width: 100%;
+    background-color: var(--primary-blue);
+    color: var(--text-light);
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    margin-top: 1rem;
+}
+
+.submit-button:hover {
+    background-color: var(--secondary-blue);
+}
+
+.check-status {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+.check-status a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+.status-details h3 {
+    margin-top: 0;
+}
+
+.status-details p {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.status-details button {
+    margin-top: 1rem;
+    border-radius: 6px;
+}
+
+
+@media (max-width: 992px) {
+    .page-layout {
+        flex-direction: column;
+        width: 95%;
+        min-height: auto;
+    }
+
+    .design-section {
+        min-height: 350px;
+        order: -1;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .form-section {
+        padding: 2rem 1.5rem;
+        flex: auto;
+    }
+
+    .design-section .doctor-image-container {
+        min-height: 200px;
+    }
+
+    .design-section .stat,
+    .design-section .stat-bottom {
+        font-size: 0.8rem;
+    }
+}

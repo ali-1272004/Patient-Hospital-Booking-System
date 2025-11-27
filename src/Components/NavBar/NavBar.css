@@ -1,0 +1,105 @@
+:root {
+  --primary-color: #2e5bff;
+  --secondary-color: #57a6ff;
+  --accent-color: #3fb2e5;
+  --background-color: #f1f4f8;
+  --text-color: #1c1c1c;
+  
+}
+
+/* Luxury Navbar Container */
+.navbar {
+  background: #c8d7eaa5 !important;
+  backdrop-filter: blur(14px);
+  border-radius: 16px;
+  margin: 1rem auto;
+  padding: 1rem 2rem;
+  /* border: 1px solid var(--primary-color); */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+  max-width: 1200px;
+}
+
+/* Brand Styling */
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--primary-color) !important;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  letter-spacing: 0.5px;
+}
+
+/* Nav Links */
+.navbar-nav .nav-link {
+  color: var(--text-color) !important;
+  font-weight: 800;
+  margin-right: 1.5rem;
+  position: relative;
+  transition: all 0.3s ease;
+  padding-bottom: 4px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--accent-color) !important;
+}
+
+.navbar-nav .nav-link.active {
+  color: var(--accent-color) !important;
+  font-weight: 600;
+}
+
+/* Underline Animation */
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--accent-color);
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  background-color: #c8d7ea ;
+  border-radius: 12px;
+  padding: 0.5rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-item {
+  color: var(--text-color) !important;
+  transition: background 0.3s ease, color 0.3s ease;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+}
+
+.dropdown-item:hover {
+  background-color: var(--primary-color);
+  color: #fff !important;
+}
+
+/* CTA Button */
+.btn-get-started {
+  background-color: var(--accent-color);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 0.5rem 1.2rem;
+  margin-left: 1rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(63, 178, 229, 0.4);
+  border: none;
+}
+
+.btn-get-started:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+}
+
