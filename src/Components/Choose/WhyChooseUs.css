@@ -1,0 +1,147 @@
+
+.why-choose-us {
+  padding-top: 60px;
+  padding-bottom: 60px;
+   width: 90%;
+    margin: auto;
+}
+.text-center{
+  text-align: center;
+}
+
+.text-primary {
+  color: #0956f0;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.why-choose-us h2 {
+   font-size: 2rem;
+  font-weight: 800;
+  color: #051424;
+  margin-bottom: 50px;
+}
+
+.align-items-center{
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+
+.why-choose-us {
+  background-color: #f9f9f9;
+  padding-top: 60px;
+  padding-bottom: 60px;
+ 
+}
+
+
+.feature-card {
+  transition: 0.3s;
+  border-radius: 12px;
+  padding: 18px !important;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+   margin-top: 40px;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+
+.feature-card .card-body {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.right-text {
+  text-align: right;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.left-text {
+  text-align: left;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+.item_title {
+  font-size: 1rem;
+  font-weight: 700;
+  
+}
+
+
+.why-choose-us img {
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+.why-choose-us p{
+  color: rgb(89, 88, 88);
+  font-weight: 300;
+  font-size: .9rem;
+  margin-top: 4px;
+}
+
+
+@media (max-width: 992px) {
+  .feature-card .card-body {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .right-text, .left-text {
+    text-align: center;
+    align-items: center;
+  }
+
+  .icon {
+    margin-bottom: 10px;
+  }
+
+  .why-choose-us img {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 992px) {
+  .why-choose-us .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .why-choose-us .col-md-4 {
+    margin-bottom: 30px;
+  }
+
+  .why-choose-us .card-body {
+    justify-content: center !important;
+    text-align: center !important;
+    flex-direction: column;
+  }
+
+  .why-choose-us .card-body div:first-child {
+    margin-bottom: 10px;
+  }
+
+  .why-choose-us img {
+    max-height: 300px;
+  }
+} 
+

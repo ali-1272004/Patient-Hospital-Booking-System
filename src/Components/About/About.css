@@ -1,0 +1,85 @@
+/* ===== About Section ===== */
+.about-section {
+  padding: 100px 0;
+  background-color: #bfd3f030; 
+  width: 100%;
+}
+
+/* ===== Container محتوى مركزي ===== */
+.about-section .about-content {
+  max-width: 900px; 
+  margin: 0 auto; 
+  text-align: center;
+  padding: 0 20px; 
+}
+
+/* ===== العنوان ===== */
+.section-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #007bff;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+/* ===== النص ===== */
+.about-text {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 50px;
+}
+
+/* ===== Features ===== */
+.about-features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 15px 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+  min-width: 250px;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+}
+
+.feature-icon {
+  color: #00d4ff;
+  font-size: 1.5rem;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+  .section-title {
+    font-size: 2.5rem;
+  }
+  .about-text {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-features {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .feature-item {
+    justify-content: center;
+  }
+  .about-text {
+    text-align: center;
+  }
+}

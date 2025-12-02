@@ -1,0 +1,127 @@
+.home-departments-section {
+  padding: 80px 0;
+   width: 90%;
+   margin: auto;
+}
+
+.home-departments-section-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #051424;
+  margin-bottom: 50px;
+}
+
+.home-departments-subtitle {
+  color: #004de8;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+
+.home-departments-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: space-between;
+}
+
+
+.home-department-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 28px 22px;
+  width: 320px;
+  height: 120px;
+  gap: 4px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.35s, box-shadow 0.35s;
+}
+
+.home-department-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.home-tit_card{
+    width: 80%;
+    
+}
+
+.home-department-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(11,99,198,0.1), rgba(0,212,255,0.06));
+}
+
+.dept-svg {
+  color: #0b63c6;
+  font-size: 36px;
+}
+
+
+.home-department-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #102a43;
+  margin-bottom: 10px;
+}
+
+.department-description {
+  color: #566270;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  flex-grow: 1;
+}
+
+.home-department-link {
+  font-weight: 600;
+  text-decoration: none;
+  color: #0b63c6;
+  transition: color 0.2s;
+}
+.home-department-link:hover {
+  color: #007ad9;
+  text-decoration: underline;
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+
+.fade-up-animate {
+  animation: fadeUp 600ms cubic-bezier(.22,.9,.36,1) forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@media (max-width: 992px) {
+  .home-department-section-title { font-size: 2.4rem; }
+  .home-department-icon { width: 70px; height: 70px; }
+  .dept-svg { font-size: 32px; }
+}
+
+@media (max-width: 768px) {
+  .home-departments-row { gap: 18px; }
+  .home-department-section-title { font-size: 2rem; }
+}
+
+ 

@@ -26,18 +26,25 @@ function NavBar() {
               Departments
             </Nav.Link>
 
-            {/* Doctors nested under Departments */}
             <NavDropdown title="Doctors" id="doctors-dropdown">
-              <NavDropdown.Item as={Link} to="/departments/orthopedics">
+              <NavDropdown.Item as={Link} to="/departments/Orthopedics">
                 Orthopedics
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/departments/pediatrics">
+              <NavDropdown.Item as={Link} to="/departments/Pediatrics">
                 Pediatrics
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/departments/dermatology">
+              <NavDropdown.Item as={Link} to="/departments/Dermatology">
                 Dermatology
               </NavDropdown.Item>
-              {/* Add more departments as needed */}
+              <NavDropdown.Item as={Link} to="/departments/Ophthalmology">
+                Ophthalmology
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/departments/Dentistry">
+                Dentistry
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/departments/Cardiology">
+                Cardiology
+              </NavDropdown.Item>
             </NavDropdown>
 
             <Nav.Link as={Link} to="/contact">
@@ -48,7 +55,7 @@ function NavBar() {
             </Nav.Link>
           </Nav>
           <Button as={Link} to="/departments" className="btn-get-started">
-            Get Started
+            Book Now
           </Button>
         </Navbar.Collapse>
       </Container>

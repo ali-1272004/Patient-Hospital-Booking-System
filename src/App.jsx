@@ -2,29 +2,21 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import RegistrationPage from "./pages/RegistrationPage";
 import BookingTrackerPage from "./pages/BookingTrackerPage";
-import DoctorsPage from "./pages/DoctorsPage/DoctorsPage";
+import DoctorsPage from "./Pages/DoctorsPage/DoctorsPage";
 import BookingPage from "./pages/BookingPage/BookingPage";
-import DepartmentsPage from "./pages/DepartmentsPage/DepartmentsPage";
-import HomePage from "./pages/HomePage/HomePage";
-import NavBar from "./components/NavBar/NavBar";
+import DepartmentsPage from "./Pages/DepartmentsPage/DepartmentsPage";
+import HomePage from "./Pages/HomePage/HomePage";
+import NavBar from "./Components/NavBar/NavBar";
 
 const App = () => {
   return (
     <>
-      <nav>
-        <NavBar />
-      </nav>
-
+      <NavBar />
       <Routes>
         <Route path="/" element={<HomePage />} />
 
-        {/* Departments list */}
         <Route path="/departments" element={<DepartmentsPage />} />
-
-        {/* Doctors list for a department */}
         <Route path="/departments/:department" element={<DoctorsPage />} />
-
-        {/* Booking page for a doctor */}
         <Route
           path="/departments/:department/:doctorId"
           element={<BookingPage />}
@@ -34,6 +26,8 @@ const App = () => {
         <Route path="/check-status" element={<BookingTrackerPage />} />
         <Route path="*" element={<RegistrationPage />} />
       </Routes>
+
+
     </>
   );
 };

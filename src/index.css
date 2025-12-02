@@ -11,23 +11,24 @@
   --gradient-end: #1e3a8a; 
 }
 
-* {
+/* * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-body {
+} */
+ body { 
+/* background-image: url(./assets/images/4.png); */
+   background-size: cover;
+  background-repeat: no-repeat;
   font-family: 'Poppins', sans-serif;
   background-color: var(--background-light);
   color: var(--text-dark);
   line-height: 1.5;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-
+body{
+  background-color: rgb(197, 217, 231);
+} 
 
 .page-layout {
     display: flex;
@@ -41,7 +42,7 @@ body {
 }
 
 .design-section {
-    flex: 1; /* نسبة العمود الأيسر (التصميم) */
+    flex: 1; 
     background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
     padding: 2rem;
     color: var(--text-light);
@@ -272,3 +273,7 @@ input:focus, select:focus {
         font-size: 0.8rem;
     }
 }
+
+
+
+

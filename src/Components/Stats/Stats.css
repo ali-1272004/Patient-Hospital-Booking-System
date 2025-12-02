@@ -1,0 +1,67 @@
+/* ===== Stats Section ===== */
+.stats-section {
+  padding: 60px 0px;
+  
+    width: 90%;
+    margin: auto;
+ 
+}
+
+
+
+/* ===== Stats Row ===== */
+.stats-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* ===== Each Stat Item ===== */
+.stat-item {
+  flex: 1 1 20%; /* كل بطاقة تاخد مساحة متساوية */
+  background: white;
+  padding: 40px 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.32);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.stat-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+}
+
+/* ===== Stat Number ===== */
+.stat-number {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #007bff;
+  margin-bottom: 15px;
+  transition: color 0.3s;
+}
+
+.stat-item:hover .stat-number {
+  color: #00d4ff;
+}
+
+/* ===== Stat Label ===== */
+.stat-label {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1200px) {
+  .stat-item-wrapper {
+    flex: 1 1 45%; /* 2 في الصف */
+  }
+}
+
+@media (max-width: 768px) {
+  .stat-item-wrapper {
+    flex: 1 1 100%; /* 1 في الصف */
+  }
+}
