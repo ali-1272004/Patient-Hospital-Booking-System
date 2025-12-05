@@ -5,8 +5,8 @@ import Stats from "../../Components/Stats/Stats";
 import About from "../../Components/About/About";
 import Departments from "../../Components/Departments/Departments";
 import WhyChooseUs from "../../Components/Choose/WhyChooseUs";
-// import Footer from '../../Components/Footer/Footer';
-
+import Footer from '../../Components/Footer/Footer';
+import "./HomePage.css";
 const HomePage = () => {
   return (
     <>
@@ -15,7 +15,7 @@ const HomePage = () => {
       <About />
       <Departments />
       <WhyChooseUs />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };

@@ -42,29 +42,30 @@ const Departments = () => {
             <h2 className="home-departments-section-title">OUR DEPARTMENTS</h2>
           </Col>
         </Row>
+<Row>
+  <div className="home-departments-row">
+    {departments.map((dept, index) => {
+      const Icon = dept.icon;
+      return (
+        <div
+          key={index}
+          ref={el => (cardsRef.current[index] = el)}
+          className="home-department-card fade-up"
+          style={{ animationDelay: `${index * 150}ms` }}
+        >
+          <div className="home-department-icon">
+            <Icon className="dept-svg" />
+          </div>
+          <div className="home-tit_card">
+            <h4 className="home-department-title">{dept.title}</h4>
+            <a href="#" className="home-department-link">Learn More →</a>
+          </div>
+        </div>
+      );
+    })}
+  </div>
+</Row>
 
-        <Row className="home-departments-row">
-          {departments.map((dept, index) => {
-            const Icon = dept.icon;
-            return (
-              <Col key={index} lg={4} md={6} sm={6} xs={12} className="mb-4">
-                <div
-                  ref={el => (cardsRef.current[index] = el)}
-                  className="home-department-card fade-up"
-                  style={{ animationDelay: `${index * 150}ms` }}
-                >
-                  <div className="home-department-icon">
-                    <Icon className="dept-svg" />
-                  </div>
-                  <div className="home-tit_card">
-                    <h4 className="home-department-title">{dept.title}</h4>
-                    <a href="#" className="home-department-link">Learn More →</a>
-                  </div>
-                </div>
-              </Col>
-            );
-          })}
-        </Row>
       </Container>
     </section>
   );

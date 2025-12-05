@@ -47,8 +47,8 @@ function NavBar() {
               </NavDropdown.Item>
             </NavDropdown>
 
-            <Nav.Link as={Link} to="/contact">
-              Contact
+            <Nav.Link as={Link} to="/register">
+              Register
             </Nav.Link>
             <Nav.Link as={Link} to="/login">
               Login

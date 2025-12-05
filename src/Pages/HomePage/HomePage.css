@@ -1,0 +1,12 @@
+ body { 
+/* background-image: url(./assets/images/4.png); */
+   background-size: cover;
+  background-repeat: no-repeat;
+  /* font-family: 'Poppins', sans-serif;
+  background-color: var(--form-bg) !important;
+  color: var(--text-dark); */
+  line-height: 1.5;
+  /* min-height: 100vh; */
+  background-image: url(../../assets/images/Frame\ dd.png);
+  background-attachment: fixed;
+}

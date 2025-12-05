@@ -1,31 +1,33 @@
 /* ===== Stats Section ===== */
 .stats-section {
   padding: 60px 0px;
-  
-    width: 90%;
-    margin: auto;
- 
+  width: 90%;
+  margin: auto;
 }
-
-
 
 /* ===== Stats Row ===== */
 .stats-row {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 8px;
+  align-items: stretch;
+  flex-wrap: wrap; 
+  gap: 40px;
+}
+
+/* مهم جداً — يخلي العناصر جنب بعض */
+.stat-item-wrapper {
+  flex: 1 1 22%;
 }
 
 /* ===== Each Stat Item ===== */
 .stat-item {
-  flex: 1 1 20%; /* كل بطاقة تاخد مساحة متساوية */
   background: white;
   padding: 40px 20px;
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.32);
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
+  height: 100%; /* يخلي كل البوكسات نفس الطول */
 }
 
 .stat-item:hover {

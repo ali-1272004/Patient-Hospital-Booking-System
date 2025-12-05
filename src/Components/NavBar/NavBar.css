@@ -10,22 +10,22 @@
 .navbar {
   background: rgba(200, 215, 234, 0.575); 
   backdrop-filter: blur(18px) saturate(180%);
-  border-radius: 18px;
-  margin: 1rem auto;
+  /* border-radius: 18px; */
+  /* margin: 1rem auto; */
   padding: 1rem 2.5rem;
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
-  max-width: 1200px;
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  max-width: 100%;
+  /* border: 1px solid rgba(255, 255, 255, 0.25); */
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   position: relative;
   z-index: 100;
 }
 
 
-.navbar:hover {
+/* .navbar:hover {
   transform: translateY(-4px);
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
-}
+} */
 
 /* Brand Styling */
 .navbar-brand {

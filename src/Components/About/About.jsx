@@ -7,7 +7,8 @@ const About = () => {
     <section className="about-section" id="about">
       <Container>
         <Row className="justify-content-center">
-          <Col lg={10}>
+          <Col >
+          
             <div className="about-content">
               <h2 className="section-title">ABOUT US</h2>
               <p className="about-text">

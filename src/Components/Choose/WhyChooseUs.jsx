@@ -8,7 +8,7 @@ import {
   FaCheckCircle,
   FaHeart,
 } from "react-icons/fa";
-import doctorImg from "../../assets/images/doctor.jpg";
+import doctorImg from "../../assets/images/doc.png";
 import "./WhyChooseUs.css";
 
 const features = [
@@ -62,7 +62,7 @@ const WhyChooseUs = () => {
                 </Card.Text>
               </div>
 
-              <div className="icon">{item.icon}</div>
+              <div className="icon_choo">{item.icon}</div>
 
             </Card.Body>
           </Card>
