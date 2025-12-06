@@ -12,7 +12,7 @@ import "./NavBar.css";
 function NavBar() {
   return (
     <Navbar expand="lg" className="navbar">
-      <Container>
+      <Container className="navContainer">
         <Navbar.Brand as={Link} to="/">
           <FaHeartbeat /> Medic
         </Navbar.Brand>
@@ -54,7 +54,7 @@ function NavBar() {
               Login
             </Nav.Link>
           </Nav>
-          <Button as={Link} to="/departments" className="btn-get-started">
+          <Button as={Link} to="/booking" className="btn-get-started">
             Book Now
           </Button>
         </Navbar.Collapse>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap'); */
 
 :root {
   --primary-blue: #007bff;
@@ -11,14 +11,9 @@
   --gradient-end: #1e3a8a; 
 }
 
-/* * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-} */
 
 body{
-  background-color: rgb(197, 217, 231);
+  background-color: rgb(255, 255, 255);
 } 
 
 .page-layout {

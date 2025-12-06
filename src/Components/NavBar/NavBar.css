@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
 :root {
   --primary-color: #2e5bff;
   --secondary-color: #57a6ff;
@@ -8,29 +9,27 @@
 }
 
 .navbar {
-  background: rgba(200, 215, 234, 0.575); 
+  background: linear-gradient(to right, #98b5dba6, #59a7e684);
+  -webkit-backdrop-filter: blur(18px) saturate(180%);
   backdrop-filter: blur(18px) saturate(180%);
-  /* border-radius: 18px; */
-  /* margin: 1rem auto; */
   padding: 1rem 2.5rem;
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
   max-width: 100%;
-  /* border: 1px solid rgba(255, 255, 255, 0.25); */
   transition: transform 0.4s ease, box-shadow 0.4s ease;
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-
-
-/* .navbar:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
-} */
 
 /* Brand Styling */
 .navbar-brand {
   font-weight: 700;
   font-size: 1.8rem;
+  font-family: "Archivo Black", sans-serif;
   color: var(--primary-blue) !important;
   display: flex;
   align-items: center;
@@ -47,14 +46,20 @@
 /* Nav Links */
 .navbar-nav .nav-link {
   color: var(--text-dark) !important;
-  font-weight: 600;
+  font-family: "Arimo", sans-serif;
+  font-size:large;
+  font-weight: 800;
   margin-right: 1.8rem;
   position: relative;
   transition: all 0.35s ease;
   padding-bottom: 6px;
   letter-spacing: 0.4px;
 }
-
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  flex: 1; /* take available space between brand and button */
+}
 .navbar-nav .nav-link::after {
   content: "";
   position: absolute;
@@ -68,7 +73,7 @@
 
 .navbar-nav .nav-link:hover {
   color: var(--accent-color) !important;
-  text-shadow: 0 0 8px rgba(63, 178, 229, 0.6);
+  text-shadow: 0 0 2px rgba(4, 41, 57, 0.738);
 }
 
 .navbar-nav .nav-link:hover::after {
@@ -123,3 +128,24 @@
   transform: translateY(-3px) scale(1.05);
   box-shadow: 0 6px 18px rgba(63, 178, 229, 0.6);
 }
+
+
+/* Responsive Styling */
+@media (max-width: 992px) {
+  .navbar {
+    padding: 1rem;
+  }
+  .navbar-nav {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .navbar-nav .nav-link {
+    margin: 0.8rem 0;
+    font-size: 1.1rem;
+  }
+  .btn-get-started {
+    display: block;
+    margin: 1rem auto;
+  }
+}
+/* -------------------------------------------------------------------------------------------------- */

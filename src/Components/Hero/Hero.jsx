@@ -41,7 +41,7 @@ const Hero = () => {
                 our patients.
               </p>
               <div className="hero-buttons">
-                <Link to="/departments" className="btn-primary-custom">
+                <Link to="/booking" className="btn-primary-custom">
                   Book Appointment
                 </Link>
                 <Link to="/" className="btn-secondary-custom">
