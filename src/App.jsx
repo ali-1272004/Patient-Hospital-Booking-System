@@ -9,6 +9,7 @@ import HomePage from "./Pages/HomePage/HomePage";
 import Login from "./Pages/Loginpage/Login";
 import Signup from "./Pages/SignUppage/Signup";
 import NavBar from "./Components/NavBar/NavBar";
+import Dashboard from "./Components/Dashboard/Dashboard";
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
         <Route path="/rigester" element={<RegistrationPage />} />
         <Route path="/check-status" element={<BookingTrackerPage />} />
         <Route path="*" element={<RegistrationPage />} />
+        <Route path="/dashboard" element={<Dashboard/>} />
       </Routes>
  
 

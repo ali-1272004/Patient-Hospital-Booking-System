@@ -117,9 +117,37 @@
   box-shadow: 0 4px 14px rgba(63, 178, 229, 0.5);
   border: none;
 }
+.btn-get-started-cancel {
+  background: linear-gradient(90deg, #ee1919e3);
+  color: #fff;
+  font-weight: 700;
+  border-radius: 12px;
+  padding: 0.6rem 1.4rem;
+  margin-left: 1rem;
+  transition: background 0.3s ease, transform 0.25s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 14px rgba(63, 178, 229, 0.5);
+  border: none;
+}
 
 .btn-get-started:hover {
   background: linear-gradient(90deg, var(--secondary-blue), var(--accent-color));
   transform: translateY(-3px) scale(1.05);
   box-shadow: 0 6px 18px rgba(63, 178, 229, 0.6);
+}
+.btn-get-started-cancel:hover {
+  background: linear-gradient(90deg, #ee1919e3);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 18px rgba(63, 178, 229, 0.6);
+}
+
+.upcoming-appointments-table{
+    border-radius: 20px;
+    padding: 15px 20px 15px 20px;
+    background: linear-gradient(90deg, var(--accent-color), var(--primary-blue));
+}
+.past-appointments-table{
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 15px 20px 15px 20px;
+    background: linear-gradient(90deg, var(--accent-color), var(--primary-blue));
 }

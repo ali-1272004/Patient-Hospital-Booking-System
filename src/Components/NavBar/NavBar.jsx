@@ -53,6 +53,9 @@ function NavBar() {
             <Nav.Link as={Link} to="/login">
               Login
             </Nav.Link>
+            <Nav.Link as={Link} to="/dashboard">
+              Dashboard
+            </Nav.Link>
           </Nav>
           <Button as={Link} to="/departments" className="btn-get-started">
             Book Now
