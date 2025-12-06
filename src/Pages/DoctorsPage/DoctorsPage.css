@@ -1,74 +1,8 @@
-/*department info*/
 
-/* .department-info {
-  position: relative;
-  border-radius: 16px;
-  overflow: hidden;
-  background-size: cover;
-  background-position:center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  object-fit: cover;
-  min-height: 400px;
-  width: 100%;
-  image-rendering:optimizeQuality;
-}
-
-
-.department-info-overlay {
-  background: rgba(75, 112, 149, 0.41); 
-  width: 100%;
-  min-height: 400px;
-  padding: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
-.department-info-text {
-  color: #fff;
-  max-width: 700px;
-  text-align: center;
-}
-
-.department-info-text h3 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  text-shadow: 0 2px 6px rgba(0,0,0,0.4);
-}
-
-.department-info-text p {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-}
-
-.department-info-text ul {
-  list-style: none;
-  padding: 0;
-}
-
-.department-info-text li {
-  margin-bottom: 0.5rem;
-  font-weight: 600;
-}
-@media (max-width: 768px) {
-  .department-info {
-    min-height: 220px;
-  }
-
-  .department-info-text h3 {
-    font-size: 1.5rem;
-  }
-
-  .department-info-text p {
-    font-size: 1rem;
-  }
-} */
 .department-info {
+  /* margin-top: 20px; */
   position: relative;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   overflow: hidden;
   background-size: cover;
   background-position: center;
@@ -83,7 +17,7 @@
 /* Overlay for readability */
 .department-info-overlay {
   background: linear-gradient(rgba(26, 105, 162, 0.128), rgba(5, 62, 103, 0.815));
- 
+  -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
   width: 100%;
   min-height: 400px;
@@ -118,6 +52,17 @@
   line-height: 1.6;
   font-weight: 400;
   color: #e2e8f0;
+}
+.stutes-icons {
+  margin-right: 5px;
+  font-size: 2.5rem; /* size */
+  font-weight: bold;
+  color: var(--primary-blue); /* base color */
+  transition: all 0.3s ease;
+}
+
+.stutes-icons:hover {
+  transform: scale(1.15) rotate(-5deg);
 }
 
 .department-info-text ul {
@@ -265,116 +210,111 @@
 }
 
 /*------------------------------------------------------------------------------------------------*/
-.doctors-container {
-  padding: 3rem 2rem;
-  background: linear-gradient(
-    135deg,
-    rgba(241, 244, 248, 0.9),
-    rgba(241, 244, 248, 0.7)
-  );
-  border-radius: 16px;
-  max-width: 1400;
-  text-align: center;
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.659);
-}
 
-.section-title {
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: var(--primary-color);
-  margin-bottom: 2rem;
-  text-shadow: 0 2px 6px rgba(87, 166, 255, 0.3);
-}
-
+/* ------------------------------------------------------------------------------------------- */
 .doctor-card {
   background: linear-gradient(
     145deg,
-    rgba(46, 91, 255, 0.08),
-    rgba(63, 178, 229, 0.08)
+    rgba(13, 71, 161, 0.15),   /* deep blue */
+    rgba(33, 150, 243, 0.12),  /* medium blue */
+    rgba(100, 181, 246, 0.10)  /* light blue */
   );
   color: var(--text-color);
-  border-radius: 16px;
-  border: 1px solid rgba(46, 91, 255, 0.25);
-  backdrop-filter: blur(12px);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border-radius: 20px;
+  border: 1px solid rgba(33, 150, 243, 0.35);
+  backdrop-filter: blur(14px) saturate(180%);
+  -webkit-backdrop-filter: blur(14px) saturate(180%);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
   animation: fadeInUp 0.8s ease forwards;
   opacity: 0;
-  padding: 1rem;               /* add breathing space inside card */
-  text-align: center;          /* center all content */
+  padding: 1.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
-
+/* Hover Effects */
 .doctor-card:hover {
-  transform: translateY(-8px) scale(1.03);
-  box-shadow: 0 14px 28px rgba(46, 91, 255, 0.768);
-  border-color: var(--accent-color);
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 18px 36px rgba(33, 150, 243, 0.6);
+  border-color: #2196f3; /* vivid blue accent */
 }
 
 /* Doctor Image */
-.doctor-image-container{
-  margin: 0 auto 1rem auto;    
-  height: auto;              
-  width: auto;
-  max-width: 85%;              
-  border-radius: 50%;          
-  /* border: 2px solid rgba(46, 91, 255, 0.3);*/
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
+.doctor-image-container {
+  margin: 0 auto 1rem auto;
+  max-width: 85%;
+  border-radius: 50%;
   overflow: hidden;
-   transition: box-shadow 0.5s ease;
+  transition: box-shadow 0.5s ease;
 }
+
 .doctor-img {
   object-fit: cover;
   transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
+
 .doctor-card:hover .doctor-img {
   transform: scale(1.08);
-  box-shadow: 0 0 18px rgba(63, 178, 229, 0.4); 
+  box-shadow: 0 0 20px rgba(33, 150, 243, 0.45);
 }
-.doctor-card:hover  .doctor-image-container{
-  box-shadow: 0 0 18px rgba(63, 179, 229, 0.618); 
+
+.doctor-card:hover .doctor-image-container {
+  box-shadow: 0 0 20px rgba(100, 181, 246, 0.6);
 }
+
 /* Card Title & Text */
 .doctor-card .card-title {
   font-weight: 700;
-  font-size: 1.2rem;
-  color: var(--primary-color);
-  margin-bottom: 0.4rem;
+  font-size: 1.3rem;
+  color: #0d47a1; /* deep luxury blue */
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.doctor-card:hover .card-title {
+  color: #2196f3; /* vivid blue accent */
 }
 
 .doctor-card .card-text {
-  font-size: 0.95rem;
-  color: var(--text-color);
+  font-size: 1rem;
+  color: #1565c0; /* medium blue tone */
   margin-bottom: 1rem;
+  opacity: 0.9;
 }
 
-
+/* Luxury Button */
 .btn-book {
   display: inline-block;
   margin-top: 1rem;
   background: linear-gradient(
     90deg,
-    var(--primary-color),
-    var(--secondary-color)
+    #0d47a1,  /* deep blue */
+    #1976d2,  /* medium blue */
+    #42a5f5   /* light blue */
   );
   color: #fff;
   font-weight: 600;
-  border-radius: 8px;
-  padding: 0.5rem 1.2rem;
+  border-radius: 12px;
+  padding: 0.6rem 1.4rem;
   text-decoration: none;
-  transition: background 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 4px 12px rgba(63, 178, 229, 0.4);
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 18px rgba(33, 150, 243, 0.4);
 }
 
 .btn-book:hover {
   background: linear-gradient(
     90deg,
-    var(--secondary-color),
-    var(--accent-color)
+    #42a5f5,  /* light blue */
+    #1976d2,  /* medium blue */
+    #0d47a1   /* deep blue */
   );
-  transform: translateY(-2px);
+  transform: translateY(-3px) scale(1.08);
+  box-shadow: 0 8px 22px rgba(33, 150, 243, 0.6);
 }
 
+/* Animation */
 @keyframes fadeInUp {
   from {
     transform: translateY(20px);
@@ -390,3 +330,4 @@
 .doctor-card:nth-child(2) { animation-delay: 0.4s; }
 .doctor-card:nth-child(3) { animation-delay: 0.6s; }
 .doctor-card:nth-child(4) { animation-delay: 0.8s; }
+/*--------------------------------------------------------*/

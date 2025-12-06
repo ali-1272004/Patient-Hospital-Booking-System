@@ -4,6 +4,9 @@ import { Card, Row, Col, Container } from "react-bootstrap";
 import "./DoctorsPage.css";
 import doctorImg from "../../assets/images/doctor.jpg";
 import orthopedicsDeptImg from "../../assets/images/orthopedics-department2.jpg";
+import { FaStethoscope } from "react-icons/fa";
+import { FaUserDoctor } from "react-icons/fa6";
+import { GiTrophyCup } from "react-icons/gi";
 
 // export default function DoctorsPage() {
 
@@ -357,22 +360,6 @@ export default function DoctorsPage() {
   return (
     <>
       {departmentInfo && (
-        // <div
-        //   className="department-info mb-4"
-        //   style={{ backgroundImage: `url(${departmentInfo.image})` }}
-        // >
-        //   <div className="department-info-overlay">
-        //     <div className="department-info-text">
-        //       <h3>{departmentInfo.title}</h3>
-        //       <p>{departmentInfo.description}</p>
-        //       <ul>
-        //         {departmentInfo.highlights.map((h, i) => (
-        //           <li key={i}>✔ {h}</li>
-        //         ))}
-        //       </ul>
-        //     </div>
-        //   </div>
-        // </div>
         <div
           className="department-info mb-4"
           style={{ backgroundImage: `url(${departmentInfo.image})` }}
@@ -383,11 +370,20 @@ export default function DoctorsPage() {
               <p>{departmentInfo.description}</p>
 
               {/* Quick Stats Badges */}
-              
+
               <div className="department-stats">
-                <div className="stat-card">🩺 20+ Specialists</div>
-                <div className="stat-card">👨‍⚕️ 5000+ Patients Treated</div>
-                <div className="stat-card">🏆 ISO Certified</div>
+                <div className="stat-card">
+                  <FaStethoscope className="stutes-icons" />
+                  20+ Specialists
+                </div>
+                <div className="stat-card">
+                  <FaUserDoctor className="stutes-icons" />
+                  5000+ Patients Treated
+                </div>
+                <div className="stat-card">
+                  <GiTrophyCup className="stutes-icons" />
+                  ISO Certified
+                </div>
               </div>
 
               {/* Animated Highlights */}
@@ -408,9 +404,12 @@ export default function DoctorsPage() {
           <h2 className="section-title">Doctors in {departmentName}</h2>
 
           <Row>
-            {doctors.map((doc) => (
+            {doctors.map((doc, index) => (
               <Col md={4} key={doc.id} className="mb-4">
-                <Card className="doctor-card shadow-lg">
+                <Card
+                  className="doctor-card shadow-lg"
+                  style={{ animationDelay: `${index * 0.14}s` }}
+                >
                   <div className="doctor-image-container">
                     <Card.Img
                       variant="top"
